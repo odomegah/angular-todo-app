@@ -29,7 +29,11 @@ public get listeDesTodos (){
  * la porte avec le mot cle @public, qui est optionnel mais pour une bonne lisibilite de mon code je prefere toujours le mettre.
  */
 public ajouterUnTodo(unTodo: Todo){
+
+  //Ajout d'un id dynamique a notre nouveau todo
+  unTodo.id = this.todos.length + 1
 this.todos.push(unTodo);
+console.table(this.todos)
 }
 
 }

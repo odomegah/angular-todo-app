@@ -1,5 +1,6 @@
 <div class="container">
 <app-header [todosTaile] = "listeDesTodos.length"></app-header>
+<app-form (envoyerTodoAuParent) = "ajouterUnTodo($event)"></app-form>
   <footer>
     <ul>
       <li>Odomegah</li>

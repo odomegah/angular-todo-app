@@ -1,0 +1,7 @@
+<section class="todo-form">
+
+   <div>
+      <input type="text" placeholder="Ecrire un todo..." name="todoTitre" #todoTitre (keyup.enter)="ajouter(todoTitre)"/>
+      <button (click)="ajouter(todoTitre)"  type="submit">Ajouter</button>
+   </div>
+</section>
