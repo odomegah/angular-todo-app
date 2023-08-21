@@ -1,27 +1,28 @@
-# Todo
+# Angular | Todo App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+**Todo App** est une application de gestion de tache realisee avec le **Framework Angular**.
 
-## Development server
+Voir une demo sur [odomegah](https://odomegah.com/angular/todo)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Pourquoi avoir cree une Todo App ?
+Avec l'idee de comprendre le fonctionnement basique du **FrameWork Angular**, une petite Application de gestion de tache est la mieux approprie.
+Cette application m'a permit de comprendre _les concerpts et l'environement d'Angular_.
 
-## Code scaffolding
+### Environnment et concerpt
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Le passage d'un **env de developpement** a un **env de test** pour terminer avec un **env de production**.
+1. Une connaissance sur l'architecture d'une App Angular.
+1. La comprehension des **Composants Angular**.
+1. La comprehension des **Directives Angular**.
+1. La connaissance sur la **communication inter-composants Angular**.
+    1. Communication Parent-Enfant
+    1. Communication Enfant-Parent
+1. Creation de formulaire
 
-## Build
+---
+## Le Style
+La mise en page est geree par du pure CSS, sans l'intervantion d'une librairie-CSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+***
+## Me contacter
+ **Portfolio** [odomegah.com](https://odomegah.com)
