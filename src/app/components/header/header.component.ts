@@ -10,7 +10,9 @@ export class HeaderComponent {
    * @todosTaile est fournis par le Parent AppComponent
    */
   @Input()
-  todosTaile: number = 0;
+  public todosTaile: number = 0;
+  @Input()
+  public todosCompleteTaile: number = 0
 
   constructor(){}
 }

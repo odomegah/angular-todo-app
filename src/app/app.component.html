@@ -1,6 +1,7 @@
 <div class="container">
-<app-header [todosTaile] = "listeDesTodos.length"></app-header>
+<app-header [todosCompleteTaile] = "completeListeDesTodos.length" [todosTaile] = "listeDesTodos.length"></app-header>
 <app-form (envoyerTodoAuParent) = "ajouterUnTodo($event)"></app-form>
+<app-list [todosListe] = "listeDesTodos" (todoModifieEvent) = "modifierTodo($event)"></app-list>
   <footer>
     <ul>
       <li>Odomegah</li>

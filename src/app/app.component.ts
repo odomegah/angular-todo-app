@@ -23,6 +23,10 @@ public constructor(){}
 public get listeDesTodos (){
   return this.todos;
 }
+
+public get completeListeDesTodos (){
+  return this.todos.filter((e)=> e.complete == true);
+}
 /**
  * Cette methode va ajouter une nouvelle todo a notre liste @todos
  * @param unTodo ce parametre represent un todo
@@ -33,7 +37,12 @@ public ajouterUnTodo(unTodo: Todo){
   //Ajout d'un id dynamique a notre nouveau todo
   unTodo.id = this.todos.length + 1
 this.todos.push(unTodo);
-console.table(this.todos)
+// console.table(this.todos)
+}
+
+public modifierTodo(todoModifie: Todo[]){
+   this.todos = todoModifie;
+   console.table(this.todos)
 }
 
 }

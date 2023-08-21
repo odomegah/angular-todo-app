@@ -1,0 +1,11 @@
+<section class="todo-list">
+    <ul>
+      <li class="todo-item" *ngFor="let todo of todosListe">
+       <div>
+        <input [checked]="todo.complete" type="checkbox" name="" id="" #complete (click)="todoComplete(complete, todo.id)">
+       <strong [style]="todo.complete ? {color:'green', textDecoration: 'line-through'}:{color:'grey'}"> {{todo.titre}}</strong>
+       </div>
+      </li>
+
+    </ul>
+  </section>
