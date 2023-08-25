@@ -19,9 +19,9 @@ Cette application m'a permit de comprendre _les concerpts et l'environement d'An
     1. Communication Enfant-Parent
 1. Creation de formulaire
 
----
 ## Le Style
 La mise en page est geree par du pure CSS, sans l'intervantion d'une librairie-CSS
+
 
 ***
 ## Me contacter

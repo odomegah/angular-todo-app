@@ -1,11 +1,19 @@
-<section class="todo-list">
-    <ul>
-      <li class="todo-item" *ngFor="let todo of todosListe">
-       <div>
-        <input [checked]="todo.complete" type="checkbox" name="" id="" #complete (click)="todoComplete(complete, todo.id)">
-       <strong [style]="todo.complete ? {color:'green', textDecoration: 'line-through'}:{color:'grey'}"> {{todo.titre}}</strong>
-       </div>
-      </li>
 
-    </ul>
-  </section>
+      
+ 
+        <div *ngIf="jeVeuxModifier" class="modification-zone">
+          <input type="text" name="" id="" [value]="todo.titre" #nouveauTitre/>
+          <hr>
+          <div class="modification-option">
+            <button (click)="todoModification(nouveauTitre, todo.id, 'modifier')" class="enregistrer">enregistrer</button>
+            <button (click)="jeVeuxModifier = false" class="annuler">Annuler</button>
+          </div>
+        </div>
+
+       <div *ngIf="!jeVeuxModifier">
+        <input [checked]="todo.complete" type="checkbox" name="" id="" #complete (click)="todoModification(complete, todo.id, 'complete')">
+       <strong [style]="todo.complete ? {color:'green', textDecoration: 'line-through'}:{color:'grey'}"> {{todo.titre}}</strong>
+       <hr>
+       <div class="option"><button (click)="jeVeuxModifier = true">Modifier</button><button (click)="todoModification(complete, todo.id, 'supprimer')">Supprimer</button></div>
+       </div>
+      

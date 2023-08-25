@@ -1,17 +1,17 @@
 *{
-    padding: 0;
-    margin: 0;
+
     box-sizing: border-box;
-    list-style-type: none;
     font-family: roboto;
 }
+
+
 .container{
     max-width: 500px;
     margin: auto;
     border:rgba(51, 51, 51, 0.733) solid 0.5px;
 }
 header{
-    background-color: rgba(22, 22, 22, 0.856)
+    background-color: rgba(22, 22, 22, 0.856);
 }
 header ul{
     display: flex;
@@ -19,17 +19,20 @@ header ul{
     justify-content: end;
     gap: 10px;
     padding: 7px;
+    margin: 0;
+    
 }
 header li{
     background-color: white;
     border-radius: 50%;
     padding: 15px;
+    list-style-type: none;
 }
 .todo-form div{
 padding: 7px;
 text-align: center;
 }
-.todo-form input, .todo-form button{
+.todo-form input, .todo-form button, .modification-zone input{
     padding: 10px;
     outline: none;
 letter-spacing: 2px;
@@ -39,7 +42,10 @@ letter-spacing: 2px;
     /* border: lightblue solid 2px; */
     width: 80%;
 }
-.todo-form input:focus-visible{
+.modification-zone input{
+    width: 100%;
+}
+.todo-form input:focus-visible, .modification-zone input:focus-visible{
     border: lightblue solid 1px;
 }
 
@@ -48,16 +54,22 @@ section ul{
 }
 
 section li{
+    list-style-type: none;
     padding: 8px;
     margin-bottom: 10px;
     background-color: #eee;
     letter-spacing: 1px;
     font-size: 15px;
     cursor: pointer;
-    
 }
-
-
+.option, .modification-option{
+    display: flex;
+    justify-content:end;
+    gap: 10px;
+}
+.option button, .modification-option button{
+    padding: 5px;
+}
 
 footer{
     border-top: #aaa solid 1px;
@@ -65,6 +77,7 @@ footer{
 
 
 footer ul{
+    list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -72,4 +85,8 @@ footer ul{
     padding: 7px;
 letter-spacing: 2px;
     color: #aaa;
+}
+
+.description{
+    padding: 20px;
 }

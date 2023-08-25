@@ -36,13 +36,16 @@ public ajouterUnTodo(unTodo: Todo){
 
   //Ajout d'un id dynamique a notre nouveau todo
   unTodo.id = this.todos.length + 1
-this.todos.push(unTodo);
-// console.table(this.todos)
+  this.todos.push(unTodo);
 }
 
-public modifierTodo(todoModifie: Todo[]){
-   this.todos = todoModifie;
+public modifierTodo(todoModifie: Todo){
+   if(this.todos.find((e)=>{ return e.id == todoModifie.id})!.titre === ""){
+    this.todos = this.todos.filter((e)=>e.id != todoModifie.id)
+   }
    console.table(this.todos)
 }
+
+
 
 }

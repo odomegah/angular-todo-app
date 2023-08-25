@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -15,8 +14,7 @@ import { ListComponent } from './components/list/list.component';
     ListComponent
   ],
   imports: [
-    BrowserModule,
-    ReactiveFormsModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

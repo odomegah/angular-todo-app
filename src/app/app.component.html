@@ -1,11 +1,57 @@
-<div class="container">
+<div class="container main">
 <app-header [todosCompleteTaile] = "completeListeDesTodos.length" [todosTaile] = "listeDesTodos.length"></app-header>
 <app-form (envoyerTodoAuParent) = "ajouterUnTodo($event)"></app-form>
-<app-list [todosListe] = "listeDesTodos" (todoModifieEvent) = "modifierTodo($event)"></app-list>
+
+<section class="todo-list">
+  <ul>
+    <li class="todo-item" *ngFor="let todo of listeDesTodos">
+<app-list [todo]="todo" (todoModifieEvent) = "modifierTodo($event)"></app-list>
+  </li>
+  </ul>
+  </section>
   <footer>
     <ul>
-      <li>Odomegah</li>
-      <li>20-Aout-2023</li>
+      <li><a href="https://odomegah.com">odomegah</a></li>
     </ul>
   </footer>
+</div>
+<div class="container">
+
+  <div class="description">
+    <h3> Angular | Todo App</h3>
+ <p>
+ 
+   <strong>
+ 
+     Todo App
+   </strong> 
+    est une application de gestion de tache realisee avec le 
+    <strong>
+ Framework Angular.
+    </strong>
+ </p>
+     
+     
+     <h4>Pourquoi avoir cree une Todo App ?</h4>
+    <p>
+      Avec l'idee de comprendre le fonctionnement basique du <strong>FrameWork Angular</strong>, une petite Application de gestion de tache est la mieux approprie.
+      Cette application m'a permit de comprendre <u>les concerpts et l'environement d'Angular.</u>
+    </p>
+   <h5>Environnment et concerpt</h5>
+   <ol>
+<li>Le passage d'un <strong>env de developpement</strong> a un <strong>env de test</strong> pour terminer avec un <strong>env de production</strong></li>
+<li>Une connaissance sur l'architecture d'une App Angular.</li>
+<li>La comprehension des <strong>Composants Angular</strong></li>
+<li>La comprehension des <strong>Directives Angular</strong></li>
+<li>La connaissance sur la <strong>communication inter-composants Angular</strong>
+<ol>
+  <li>Communication Parent-Enfant</li>
+  <li>Communication Enfant-Parent</li>
+</ol>
+</li>
+   </ol>
+<hr>
+     <h3>Code Source sur:</h3>
+      <a href="https://github.com/odomegah/angular-todo-app">GitHub</a>
+   </div>
 </div>
